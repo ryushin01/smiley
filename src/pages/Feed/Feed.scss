@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import '../../assets/scss/partials/media_query.scss',
+  '../../assets/scss/partials/mixin.scss',
+  '../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .feed {
+      padding-left: 100px;
+      padding-bottom: 0;
+
+      .feed-section {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+
+    @include Mobile {
+      .feed {
+        padding-left: 0;
+        padding-bottom: 50px;
+
+        .feed-section {
+          width: 100%;
+          padding: 0 12px;
+        }
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

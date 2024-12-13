@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import '../../assets/scss/partials/mixin.scss',
+  '../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .chip {
+      span {
+        display: block;
+        padding: 10px;
+        border: 1px $grayscale-3 solid;
+        border-radius: 4px;
+        font-size: 16px;
+        color: $grayscale-2;
+        white-space: nowrap;
+      }
+
+      input:checked + span {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: #fff;
+      }
+
+      input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

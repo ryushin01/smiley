@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import '../../assets/scss/partials/media_query.scss',
+  '../../assets/scss/partials/mixin.scss',
+  '../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .header {
+      @include Position(fixed, $left: 0, $top: 0);
+      @include FlexCenter();
+      z-index: 100;
+      width: 100px;
+      height: 30%;
+      border-right: 1px solid $grayscale-3;
+      border-bottom: 0;
+      background-color: $grayscale-6;
+      font-size: 28px;
+
+      h1 {
+        position: relative;
+        display: inline-block;
+        margin-top: 6px;
+
+        &::before {
+          @include Position(absolute, $top: -6px, $left: -3px);
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url(https://ryushin01.github.io/smiley/images/login/logo.png)
+            no-repeat center/cover;
+        }
+      }
+    }
+
+    @include Mobile {
+      .header {
+        @include Position(sticky, $top: 0);
+        width: auto;
+        height: 50px;
+        border-bottom: 1px solid $grayscale-3;
+        border-right: 0;
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

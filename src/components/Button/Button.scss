@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import '../../assets/scss/partials/mixin.scss',
+  '../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .btn {
+      @include FlexCenter();
+      height: 50px;
+      padding: 0 20px;
+      border: 1px transparent solid;
+      border-radius: 4px;
+      font-size: 16px;
+      border-color: $grayscale-3;
+
+      &[shape='solid'] {
+        background-color: $grayscale-3;
+        color: $grayscale-6;
+
+        &:active {
+          border-color: $primary-color;
+          background-color: $primary-color;
+        }
+      }
+
+      &[shape='outline'] {
+        color: $grayscale-2;
+
+        &:active {
+          border-color: $primary-color;
+          color: $primary-color;
+        }
+      }
+
+      &[disabled] {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

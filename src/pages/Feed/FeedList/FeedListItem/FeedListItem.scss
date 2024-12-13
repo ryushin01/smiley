@@ -1,0 +1,236 @@
+@charset "utf-8";
+@import '../../../../assets/scss/partials/media_query.scss',
+  '../../../../assets/scss/partials/mixin.scss',
+  '../../../../assets/scss/partials/swiper.scss',
+  '../../../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .feed-list-item {
+      position: relative;
+      padding: 24px 0;
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .left-split {
+          @include FlexCenter();
+          gap: 12px;
+
+          img:not(.official-mark) {
+            width: 36px;
+            height: 36px;
+            border: 3px transparent solid;
+            border-radius: 50%;
+            object-fit: contain;
+
+            &.hot-feed {
+              background-image: linear-gradient(#fff, #fff),
+                linear-gradient(to right, #2e86de 0%, #38ada9 100%);
+              background-origin: border-box;
+              background-clip: content-box, border-box;
+            }
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+
+          strong {
+            @include FlexCenter;
+            gap: 4px;
+
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        .right-split {
+          .dropdown {
+            position: relative;
+            font-size: 0;
+
+            & > button {
+              font-size: inherit;
+
+              svg {
+                fill: $grayscale-1;
+
+                path {
+                  fill: inherit;
+                }
+              }
+
+              &:active {
+                svg {
+                  fill: $primary-color;
+                }
+              }
+            }
+
+            ul {
+              position: absolute;
+              top: 100%;
+              right: 0;
+              z-index: 10;
+              border-radius: 4px;
+              background-color: $grayscale-1;
+
+              li {
+                white-space: nowrap;
+
+                & + li {
+                  border-top: 1px $grayscale-5 solid;
+                }
+
+                &:first-child {
+                  button {
+                    color: $secondary-color;
+
+                    svg {
+                      fill: $secondary-color;
+                      path {
+                        fill: inherit;
+                      }
+                    }
+                  }
+                }
+
+                button {
+                  @include FlexCenter();
+                  gap: 8px;
+                  height: 50px;
+                  padding: 0 20px;
+                  font-size: 16px;
+                  color: $grayscale-6;
+
+                  svg {
+                    fill: $grayscale-6;
+                    path {
+                      fill: inherit;
+                    }
+                  }
+
+                  &:active {
+                    svg {
+                      fill: $primary-color;
+                    }
+                  }
+
+                  &:active {
+                    color: $primary-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        & + .content {
+          margin-top: 12px;
+        }
+      }
+
+      .content {
+        p {
+          @include Ellipsis($multi: true, $line: 3);
+          margin-top: 12px;
+          font-size: 16px;
+          line-height: 1.5;
+
+          // json에 이스케이프 시퀀스 적용을 위한 CSS 소스 코드
+          white-space: pre-wrap;
+        }
+      }
+
+      .comment {
+        button {
+          padding: 12px 0;
+          font-size: 14px;
+          color: $grayscale-2;
+        }
+      }
+
+      .comment-write {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+
+        .comment-writer {
+          img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: contain;
+          }
+        }
+
+        .comment-form {
+          display: flex;
+          align-items: flex-start;
+          flex: 1;
+          font-size: 0;
+
+          fieldset {
+            flex: 1;
+          }
+
+          button {
+            height: 24px;
+            padding: 0 10px;
+
+            &:active {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    @include Mobile {
+      .feed {
+        padding-left: 0;
+
+        .content {
+          .swiper-area {
+            margin: 0 -12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

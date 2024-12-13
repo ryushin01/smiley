@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import '../partials/theme.scss';
+
+.swiper-area {
+  margin: 0;
+  font-size: 0;
+
+  .swiper {
+    border: 1px #eee solid;
+
+    .swiper-slide {
+      position: relative;
+      padding-bottom: 56.25%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .swiper-prev-btn,
+  .swiper-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    svg {
+      fill: #fff;
+      path {
+        fill: inherit;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  .swiper-prev-btn {
+    left: 4px;
+  }
+
+  .swiper-next-btn {
+    right: 4px;
+  }
+
+  .swiper-pagination {
+    bottom: 12px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $primary-color;
+  }
+}

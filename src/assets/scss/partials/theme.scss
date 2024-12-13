@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// other colors
+$primary-color: #FDE061;
+$secondary-color: #EFC74F;
+$error-color: #bb2649;
+
+// grayscale
+$grayscale-1: #222;
+$grayscale-2: #999;
+$grayscale-3: #ccc;
+$grayscale-4: #e0e0e0;
+$grayscale-5: #fafafa;
+$grayscale-6: #fff;
+
+$pallette: (
+  (light, #222, #999, #ccc, #e0e0e0, #fafafa, #fff),
+  (dark, #fff, #fafafa, #e0e0e0, #ccc, #999, #222)
+);
+
+// @mixin ThemeTransition {
+//   transition:
+//     background-color 0.5s cubic-bezier(0.16, 1, 0.29, 0.99),
+//     color 0.5s cubic-bezier(0.16, 1, 0.29, 0.99);
+// }
+
+
+// 색상 참고 > sun flower / SUN FLOWER: #f1c40f
+// https://ozjejakso.com/blog/41
+// https://colorhunt.co/palettes/popular
+// https://coolors.co/
+// https://uigradients.com/#Amin
+// https://www.design-seeds.com/

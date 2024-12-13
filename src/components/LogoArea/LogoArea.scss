@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import '../../assets/scss/partials/mixin.scss',
+  '../../assets/scss/partials/theme.scss';
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    .logo-area {
+      @include FlexCenter();
+      flex: 1;
+      text-align: center;
+
+      h1 {
+        position: relative;
+        display: inline-block;
+        font-size: 6rem;
+
+        &::before {
+          @include Position(absolute, $top: 0, $left: 0);
+          content: '';
+          display: block;
+          width: 32px;
+          height: 32px;
+          background: url(https://ryushin01.github.io/smiley/images/login/logo.png)
+            no-repeat center/cover;
+        }
+      }
+
+      h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}

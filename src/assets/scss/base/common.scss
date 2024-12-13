@@ -1,0 +1,428 @@
+@charset "utf-8";
+@import './reset', '../partials/media_query.scss', '../partials/mixin',
+  '../partials/theme';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Stylish', sans-serif;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Stylish', sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+
+  &.main {
+    @include FlexCenter();
+    flex-direction: column;
+  }
+}
+
+input {
+  font-family: 'Stylish', sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 48px;
+  resize: none;
+  border: 0;
+  outline: 0;
+  font-family: 'Stylish', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  &::placeholder {
+    font-size: 14px;
+    color: $grayscale-2;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > div {
+    display: inherit;
+    flex-direction: inherit;
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+// 웹 접근성 처리
+.a11y-hidden {
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.hidden {
+  position: absolute;
+  z-index: -1;
+  font-size: 1px;
+  color: transparent;
+}
+
+// 테마 스위치
+.theme-switcher {
+  @include Position(
+    fixed,
+    $top: auto,
+    $right: auto,
+    $left: 22px,
+    $bottom: 35px
+  );
+  z-index: 100;
+  font-size: 0;
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #000;
+    transition: background-color 200ms ease-in-out;
+
+    &::before,
+    &::after {
+      @include Position(absolute, $top: 50%);
+      content: '';
+      transform: translateY(-50%);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      left: 5px;
+      background-image: url(https://ryushin01.github.io/smiley/images/common/icon_day.png);
+    }
+
+    &::after {
+      right: 5px;
+      background-image: url(https://ryushin01.github.io/smiley/images/common/icon_night.png);
+    }
+
+    span {
+      position: absolute;
+      z-index: 1;
+      font-size: 0;
+
+      &::after {
+        @include Position(absolute, $top: 4px, $left: 5px);
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: transform 0.1s linear;
+      }
+    }
+  }
+
+  input:checked ~ label {
+    span::after {
+      transform: translate3d(25px, 0, 0);
+    }
+  }
+}
+
+@include Mobile {
+  .theme-switcher {
+    @include Position(
+      fixed,
+      $top: 10px,
+      $right: 10px,
+      $left: auto,
+      $bottom: auto
+    );
+  }
+}
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    background-color: $grayscale-6;
+    color: $grayscale-1;
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}
+@charset "utf-8";
+@import './reset', '../partials/media_query.scss', '../partials/mixin',
+  '../partials/theme';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Stylish', sans-serif;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Stylish', sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+
+  &.main {
+    @include FlexCenter();
+    flex-direction: column;
+  }
+}
+
+input {
+  font-family: 'Stylish', sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 48px;
+  resize: none;
+  border: 0;
+  outline: 0;
+  font-family: 'Stylish', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  &::placeholder {
+    font-size: 14px;
+    color: $grayscale-2;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > div {
+    display: inherit;
+    flex-direction: inherit;
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+// 웹 접근성 처리
+.a11y-hidden {
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.hidden {
+  position: absolute;
+  z-index: -1;
+  font-size: 1px;
+  color: transparent;
+}
+
+// 테마 스위치
+.theme-switcher {
+  @include Position(
+    fixed,
+    $top: auto,
+    $right: auto,
+    $left: 22px,
+    $bottom: 35px
+  );
+  z-index: 100;
+  font-size: 0;
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #000;
+    transition: background-color 200ms ease-in-out;
+
+    &::before,
+    &::after {
+      @include Position(absolute, $top: 50%);
+      content: '';
+      transform: translateY(-50%);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      left: 5px;
+      background-image: url(https://ryushin01.github.io/smiley/images/common/icon_day.png);
+    }
+
+    &::after {
+      right: 5px;
+      background-image: url(https://ryushin01.github.io/smiley/images/common/icon_night.png);
+    }
+
+    span {
+      position: absolute;
+      z-index: 1;
+      font-size: 0;
+
+      &::after {
+        @include Position(absolute, $top: 4px, $left: 5px);
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: transform 0.1s linear;
+      }
+    }
+  }
+
+  input:checked ~ label {
+    span::after {
+      transform: translate3d(25px, 0, 0);
+    }
+  }
+}
+
+@include Mobile {
+  .theme-switcher {
+    @include Position(
+      fixed,
+      $top: 10px,
+      $right: 10px,
+      $left: auto,
+      $bottom: auto
+    );
+  }
+}
+
+@mixin theme(
+  $theme,
+  $grayscale-1,
+  $grayscale-2,
+  $grayscale-3,
+  $grayscale-4,
+  $grayscale-5,
+  $grayscale-6
+) {
+  [data-theme='#{$theme}'] {
+    background-color: $grayscale-6;
+    color: $grayscale-1;
+  }
+}
+
+@each $theme, $grayscale-1, $grayscale-2, $grayscale-3, $grayscale-4,
+  $grayscale-5, $grayscale-6 in $pallette
+{
+  @include theme(
+    $theme,
+    $grayscale-1,
+    $grayscale-2,
+    $grayscale-3,
+    $grayscale-4,
+    $grayscale-5,
+    $grayscale-6
+  );
+}
