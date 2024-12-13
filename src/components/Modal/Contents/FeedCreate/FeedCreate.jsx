@@ -107,9 +107,7 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
   const [numberOfCameras, setNumberOfCameras] = useState(0);
 
   const videoConstraints = {
-    width: 1280,
-    height: 720,
-    facingMode: "user"
+    facingMode: "environment"
   };
 
   return (
@@ -208,9 +206,9 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                 <div>
                   <Webcam
                       audio={false}
-                      height={720}
+                      height={200}
                       screenshotFormat="image/jpeg"
-                      width={1280}
+                      width="100%"
                       videoConstraints={videoConstraints}
                   >
                     {({ getScreenshot }) => (
