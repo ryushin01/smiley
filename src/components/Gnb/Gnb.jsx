@@ -38,7 +38,7 @@ const Gnb = ({ userInfo, defaultProfileImage }) => {
     <nav className="gnb">
       <ul>
         <li>
-          <button type="button" onClick={() => navigate('/feed')}>
+          <button type="button" onClick={() => navigate('/')}>
             <IconHome />
           </button>
         </li>
