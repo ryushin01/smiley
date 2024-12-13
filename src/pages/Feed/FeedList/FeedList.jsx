@@ -42,6 +42,10 @@ const FeedList = ({ userInfo, defaultProfileImage }) => {
 
   const { profileImage } = userInfo;
 
+  /**
+   * 반응형 모바일 웹에서 디바이스 네이티브 기능 접근해 카메라 촬영 후 미리보기 기능 및 갤러리 미저장 기능 구현
+   * @imgSrc: 갤러리에 저장되지 않고 찍힌 상태로 확대가 가능한 이미지 경로
+   */
   const webcamRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
   const capture = useCallback(() => {
@@ -50,9 +54,9 @@ const FeedList = ({ userInfo, defaultProfileImage }) => {
   }, [webcamRef, setImgSrc]);
 
   const videoConstraints = {
+    // facingMode: user(전면 카메라 제어) | environment(후면 카메라 제어)
     facingMode: "environment"
   }
-
 
   return (
     <>
