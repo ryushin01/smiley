@@ -106,17 +106,16 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
   const [image, setImage] = useState(null);
   const [numberOfCameras, setNumberOfCameras] = useState(0);
 
-  const webcamRef = useRef(null);
-  const capture = useCallback(
-      () => {
-        const imageSrc = webcamRef.current.getScreenshot();
-      },
-      [webcamRef]
-  );
-
-  const videoConstraints = {
-    facingMode: "environment"
-  };
+  // const webcamRef = useRef(null);
+  // const [imgSrc, setImgSrc] = useState(null);
+  // const capture = useCallback(() => {
+  //   const imageSrc = webcamRef.current.getScreenshot();
+  //   setImgSrc(imageSrc);
+  // }, [webcamRef, setImgSrc]);
+  //
+  // const videoConstraints = {
+  //   facingMode: "environment"
+  // }
 
   return (
     <>
@@ -211,24 +210,31 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                 {/*        console.log(image, 'do whatever you want with the image')*/}
                 {/*    }*/}
                 {/*/>*/}
-                <div>
-                  <Webcam
-                      ref={webcamRef}
-                      audio={false}
-                      height={200}
-                      screenshotFormat="image/jpeg"
-                      width="100%"
-                      videoConstraints={videoConstraints}
-                  >
-                    {({ getScreenshot }) => (
-                        <button
-                            onClick={capture}
-                        >
-                          사진 촬영하기
-                        </button>
-                    )}
-                  </Webcam>
-                </div>
+                {/*<div>*/}
+                {/*  <Webcam*/}
+                {/*      ref={webcamRef}*/}
+                {/*      audio={false}*/}
+                {/*      height={200}*/}
+                {/*      screenshotFormat="image/jpeg"*/}
+                {/*      width="100%"*/}
+                {/*      mirrored="true"*/}
+                {/*      screenshotQuality="1"*/}
+                {/*      videoConstraints={videoConstraints}*/}
+                {/*  >*/}
+                {/*    {({ getScreenshot }) => (*/}
+                {/*        <button*/}
+                {/*            onClick={capture}*/}
+                {/*        >*/}
+                {/*          사진 촬영하기*/}
+                {/*        </button>*/}
+                {/*    )}*/}
+                {/*  </Webcam>*/}
+                {/*  {imgSrc && (*/}
+                {/*      <img*/}
+                {/*          src={imgSrc}*/}
+                {/*      />*/}
+                {/*  )}*/}
+                {/*</div>*/}
                 <textarea
                     name="feedCreate"
                     placeholder="피드는 최대 2,000자까지 작성할 수 있습니다."
