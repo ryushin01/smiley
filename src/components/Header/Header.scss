@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import '../../assets/scss/partials/media_query.scss',
-  '../../assets/scss/partials/mixin.scss',
-  '../../assets/scss/partials/theme.scss';
+'../../assets/scss/partials/mixin.scss',
+'../../assets/scss/partials/theme.scss';
 
 @mixin theme(
   $theme,
@@ -23,6 +23,20 @@
       border-bottom: 0;
       background-color: $grayscale-6;
       font-size: 28px;
+
+      h1 {
+        display: inline-block;
+      }
+    }
+
+    @include Mobile {
+      .header {
+        @include Position(sticky, $top: 0);
+        width: auto;
+        height: 50px;
+        border-bottom: 1px solid $grayscale-3;
+        border-right: 0;
+      }
     }
   }
 }

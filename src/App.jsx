@@ -7,7 +7,13 @@ const App = () => {
   const [userInfo, setUserInfo] = useState({});
   const targetRef = useRef(null);
   const defaultProfileImage =
-    'https://ryushin01.github.io/smiley/images/login/logo.png';
+      'https://ryushin01.github.io/smiley/images/login/logo.png';
+
+  const themeSwitcher = e => {
+    e.target.checked
+        ? targetRef.current.setAttribute('data-theme', 'dark')
+        : targetRef.current.setAttribute('data-theme', 'light');
+  };
 
   async function getUserInfo() {
     try {
@@ -27,7 +33,17 @@ const App = () => {
   }, []);
 
   return (
-    <Router userInfo={userInfo} defaultProfileImage={defaultProfileImage} />
+      <>
+        <div ref={targetRef} data-theme="light">
+          <Router userInfo={userInfo} defaultProfileImage={defaultProfileImage} />
+          {/*<div className="theme-switcher">*/}
+          {/*  <input id="theme-switcher" type="checkbox" onClick={themeSwitcher} />*/}
+          {/*  <label htmlFor="theme-switcher">*/}
+          {/*    <span>테마 스위치</span>*/}
+          {/*  </label>*/}
+          {/*</div>*/}
+        </div>
+      </>
   );
 };
 
