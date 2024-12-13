@@ -1,13 +1,33 @@
 [
   {
     "id": 1,
-    "text": "\n",
+    "text": "고양이를 좋아하시나요?\n\n고양이 심리 테스트!",
     "user_id": 1,
     "created_at": "2024-12-13 10:00:00",
     "images": [
       {
         "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/01.png",
-        "text": "test"
+        "text": "고양이"
+      },
+      {
+        "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/02.png",
+        "text": "고양이"
+      },
+      {
+        "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/03.jpg",
+        "text": "고양이"
+      },
+      {
+        "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/04.jpg",
+        "text": "고양이"
+      },
+      {
+        "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/05.jpg",
+        "text": "고양이"
+      },
+      {
+        "src": "https://ryushin01.github.io/smiley/images/feed/mockup/001/06.jpg",
+        "text": "고양이"
       }
     ],
     "profile_image": "https://ryushin01.github.io/smiley/images/login/logo.png",
