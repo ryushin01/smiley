@@ -159,8 +159,7 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                       accept="image/*"
                       id="icon-button-file"
                       type="file"
-                      {/* user: 전면부 카메라 제어 / environment: 후면부 카메라 제어 */}
-                      capture="environment"
+                      capture="environment" //  user: 전면부 카메라 제어 / environment: 후면부 카메라 제어
                       onChange={(e) => handleCapture(e.target)}
                   />
                 </div>
