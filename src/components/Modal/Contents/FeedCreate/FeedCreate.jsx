@@ -169,9 +169,21 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                   />
                 </div>
                 <div>
-                  <Camera ref={camera} numberOfCamerasCallback={setNumberOfCameras} facingMode='environment' />
-                  <button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>
-                  <img src={image} alt='Taken photo'/>
+                  <Camera ref={camera} numberOfCamerasCallback={setNumberOfCameras} facingMode='environment'/>
+                  {/*<button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>*/}
+                  <button
+                      onClick={() => {
+                        const photo = camera.current.takePhoto();
+                        setImage(photo);
+                      }}
+                  />
+                  <button
+                      hidden={numberOfCameras <= 1}
+                      onClick={() => {
+                        camera.current.switchCamera();
+                      }}
+                  />
+                  {image && <img src={image} alt='Taken photo'/>}
                 </div>
                 <textarea
                     name="feedCreate"
