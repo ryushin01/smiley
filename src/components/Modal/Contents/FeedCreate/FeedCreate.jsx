@@ -82,6 +82,17 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
     }
   }
 
+  const [source, setSource] = useState("");
+  const handleCapture = (target) => {
+    if (target.files) {
+      if (target.files.length !== 0) {
+        const file = target.files[0];
+        const newUrl = URL.createObjectURL(file);
+        setSource(newUrl);
+      }
+    }
+  };
+
   return (
     <>
       <article className="feed-detail feed-create">
@@ -142,13 +153,24 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                   />
                   <label htmlFor="file">사진 선택</label>
                 </div>
+                <div>
+                  {source && <img src={source} alt={"snap"} width='500' height='500'></img>}
+                  <input
+                      accept="image/*"
+                      id="icon-button-file"
+                      type="file"
+                      {/* user: 전면부 카메라 제어 / environment: 후면부 카메라 제어 */}
+                      capture="environment"
+                      onChange={(e) => handleCapture(e.target)}
+                  />
+                </div>
                 <textarea
-                  name="feedCreate"
-                  placeholder="피드는 최대 2,000자까지 작성할 수 있습니다."
-                  maxLength={2000}
+                    name="feedCreate"
+                    placeholder="피드는 최대 2,000자까지 작성할 수 있습니다."
+                    maxLength={2000}
                 ></textarea>
                 <Button
-                  type="submit"
+                    type="submit"
                   shape="solid"
                   content="게시"
                   onClick={postFeedCreate}
