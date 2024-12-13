@@ -5,7 +5,9 @@ import { ReactComponent as IconNextArrow } from '../../../../assets/images/icon_
 import Button from '../../../Button/Button';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import { Camera } from "react-camera-pro";
+// import { Camera } from "react-camera-pro";
+// import Camera from 'react-dom-camera';
+import Webcam from "react-webcam";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -20,6 +22,12 @@ import './FeedCreate.scss';
 
 // 8. 멀티 이미지 전송하기 위해 JavaScript 내장 객체인 formData를 생성합니다.
 const formData = new FormData();
+
+// const CoolButton = ({ onClick }) => (
+//     <button onClick={onClick} type="button">
+//       Take photo
+//     </button>
+// );
 
 const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
   // 1. 멀티 이미지 업로드와 미리보기를 위한 useState를 만듭니다.
@@ -98,6 +106,12 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
   const [image, setImage] = useState(null);
   const [numberOfCameras, setNumberOfCameras] = useState(0);
 
+  const videoConstraints = {
+    width: 1280,
+    height: 720,
+    facingMode: "user"
+  };
+
   return (
     <>
       <article className="feed-detail feed-create">
@@ -148,42 +162,67 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
             <form className="feed-form" onChange={typingSentry}>
               <fieldset>
                 <legend className="hidden">피드 게시 양식</legend>
-                <div className="file-upload">
-                  <input
-                      id="file"
-                      type="file"
-                      accept="image/*"
-                      onChange={changedFeedImages}
-                      multiple
-                  />
-                  <label htmlFor="file">사진 선택</label>
-                </div>
+                {/*<div className="file-upload">*/}
+                {/*  <input*/}
+                {/*      id="file"*/}
+                {/*      type="file"*/}
+                {/*      accept="image/*"*/}
+                {/*      onChange={changedFeedImages}*/}
+                {/*      multiple*/}
+                {/*  />*/}
+                {/*  <label htmlFor="file">사진 선택</label>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*  {source && <img src={source} alt={"snap"} width='500' height='500'></img>}*/}
+                {/*  <input*/}
+                {/*      accept="image/*"*/}
+                {/*      id="icon-button-file"*/}
+                {/*      type="file"*/}
+                {/*      capture="environment" //  user: 전면부 카메라 제어 / environment: 후면부 카메라 제어*/}
+                {/*      onChange={(e) => handleCapture(e.target)}*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*  <Camera ref={camera} numberOfCamerasCallback={setNumberOfCameras} facingMode='environment'/>*/}
+                {/*  /!*<button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>*!/*/}
+                {/*  <button*/}
+                {/*      onClick={() => {*/}
+                {/*        const photo = camera.current.takePhoto();*/}
+                {/*        setImage(photo);*/}
+                {/*      }}*/}
+                {/*  />*/}
+                {/*  <button*/}
+                {/*      hidden={numberOfCameras <= 1}*/}
+                {/*      onClick={() => {*/}
+                {/*        camera.current.switchCamera();*/}
+                {/*      }}*/}
+                {/*  />*/}
+                {/*  {image && <img src={image} alt='Taken photo'/>}*/}
+                {/*</div>*/}
+                {/*<Camera*/}
+                {/*    captureButtonRenderer={onClick => <CoolButton onClick={onClick} />}*/}
+                {/*    onTakePhoto={image =>*/}
+                {/*        console.log(image, 'do whatever you want with the image')*/}
+                {/*    }*/}
+                {/*/>*/}
                 <div>
-                  {source && <img src={source} alt={"snap"} width='500' height='500'></img>}
-                  <input
-                      accept="image/*"
-                      id="icon-button-file"
-                      type="file"
-                      capture="environment" //  user: 전면부 카메라 제어 / environment: 후면부 카메라 제어
-                      onChange={(e) => handleCapture(e.target)}
-                  />
-                </div>
-                <div>
-                  <Camera ref={camera} numberOfCamerasCallback={setNumberOfCameras} facingMode='environment'/>
-                  {/*<button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>*/}
-                  <button
-                      onClick={() => {
-                        const photo = camera.current.takePhoto();
-                        setImage(photo);
-                      }}
-                  />
-                  <button
-                      hidden={numberOfCameras <= 1}
-                      onClick={() => {
-                        camera.current.switchCamera();
-                      }}
-                  />
-                  {image && <img src={image} alt='Taken photo'/>}
+                  <Webcam
+                      audio={false}
+                      height={720}
+                      screenshotFormat="image/jpeg"
+                      width={1280}
+                      videoConstraints={videoConstraints}
+                  >
+                    {({ getScreenshot }) => (
+                        <button
+                            onClick={() => {
+                              const imageSrc = getScreenshot()
+                            }}
+                        >
+                          Capture photo
+                        </button>
+                    )}
+                  </Webcam>
                 </div>
                 <textarea
                     name="feedCreate"
