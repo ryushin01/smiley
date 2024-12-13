@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { customAxios } from '../../../../modules/customAxios';
 import { ReactComponent as IconPrevArrow } from '../../../../assets/images/icon_prev_arrow.svg';
 import { ReactComponent as IconNextArrow } from '../../../../assets/images/icon_next_arrow.svg';
 import Button from '../../../Button/Button';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { Camera } from "react-camera-pro";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -93,6 +94,9 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
     }
   };
 
+  const camera = useRef(null);
+  const [image, setImage] = useState(null);
+
   return (
     <>
       <article className="feed-detail feed-create">
@@ -145,11 +149,11 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                 <legend className="hidden">피드 게시 양식</legend>
                 <div className="file-upload">
                   <input
-                    id="file"
-                    type="file"
-                    accept="image/*"
-                    onChange={changedFeedImages}
-                    multiple
+                      id="file"
+                      type="file"
+                      accept="image/*"
+                      onChange={changedFeedImages}
+                      multiple
                   />
                   <label htmlFor="file">사진 선택</label>
                 </div>
@@ -163,6 +167,11 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                       onChange={(e) => handleCapture(e.target)}
                   />
                 </div>
+                <div>
+                  <Camera ref={camera}/>
+                  <button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>
+                  <img src={image} alt='Taken photo'/>
+                </div>
                 <textarea
                     name="feedCreate"
                     placeholder="피드는 최대 2,000자까지 작성할 수 있습니다."
@@ -170,9 +179,9 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                 ></textarea>
                 <Button
                     type="submit"
-                  shape="solid"
-                  content="게시"
-                  onClick={postFeedCreate}
+                    shape="solid"
+                    content="게시"
+                    onClick={postFeedCreate}
                 />
               </fieldset>
             </form>
