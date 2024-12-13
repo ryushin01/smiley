@@ -96,6 +96,7 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
 
   const camera = useRef(null);
   const [image, setImage] = useState(null);
+  const [numberOfCameras, setNumberOfCameras] = useState(0);
 
   return (
     <>
@@ -168,7 +169,7 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                   />
                 </div>
                 <div>
-                  <Camera ref={camera}/>
+                  <Camera ref={camera} numberOfCamerasCallback={setNumberOfCameras} facingMode='environment' />
                   <button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button>
                   <img src={image} alt='Taken photo'/>
                 </div>
