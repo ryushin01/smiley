@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { customAxios } from '../../../../modules/customAxios';
 import { ReactComponent as IconPrevArrow } from '../../../../assets/images/icon_prev_arrow.svg';
 import { ReactComponent as IconNextArrow } from '../../../../assets/images/icon_next_arrow.svg';
@@ -106,6 +106,14 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
   const [image, setImage] = useState(null);
   const [numberOfCameras, setNumberOfCameras] = useState(0);
 
+  const webcamRef = useRef(null);
+  const capture = useCallback(
+      () => {
+        const imageSrc = webcamRef.current.getScreenshot();
+      },
+      [webcamRef]
+  );
+
   const videoConstraints = {
     facingMode: "environment"
   };
@@ -205,6 +213,7 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                 {/*/>*/}
                 <div>
                   <Webcam
+                      ref={webcamRef}
                       audio={false}
                       height={200}
                       screenshotFormat="image/jpeg"
@@ -213,11 +222,9 @@ const FeedCreate = ({ nickname, profileImage, defaultProfileImage }) => {
                   >
                     {({ getScreenshot }) => (
                         <button
-                            onClick={() => {
-                              const imageSrc = getScreenshot()
-                            }}
+                            onClick={capture}
                         >
-                          Capture photo
+                          사진 촬영하기
                         </button>
                     )}
                   </Webcam>
