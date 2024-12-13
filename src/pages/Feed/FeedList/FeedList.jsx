@@ -112,7 +112,7 @@ const FeedList = ({ userInfo, defaultProfileImage }) => {
                   onClick={capture}
                   className="btn-capture"
               >
-                사진 촬영하기
+                take a picture
               </button>
           )}
         </Webcam>
