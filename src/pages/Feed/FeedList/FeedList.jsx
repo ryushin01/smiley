@@ -103,7 +103,7 @@ const FeedList = ({ userInfo, defaultProfileImage }) => {
             screenshotFormat="image/jpeg"
             width="100%"
             height="100%"
-            mirrored="true"
+            // mirrored="true"
             screenshotQuality="1"
             videoConstraints={videoConstraints}
         >
