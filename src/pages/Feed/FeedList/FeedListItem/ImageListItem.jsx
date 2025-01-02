@@ -22,7 +22,7 @@ const ImageListItem = (imageUrlLists) => {
       <div>
         {imageUrlLists.imageUrlLists.map((src) => {
           return (
-              <img src={src} />
+              <img key={src} src={src} alt="" />
           )
         })}
       </div>
