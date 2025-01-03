@@ -34,6 +34,13 @@ const FeedList = () => {
   return (
     <>
       <div className="wrapper">
+
+        {/*
+          - <PC 컴포넌트>, <Mobile 컴포넌트>로 묶어서 동시에 노출 여부 제어?
+            - 예: <MobileComponents />
+                  useragent check 후 show / hide
+        */}
+
         <Webcam
             ref={webcamRef}
             audio={false}
