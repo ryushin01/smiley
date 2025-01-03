@@ -5,7 +5,7 @@ const ImageList = (props) => {
 
     /**
      * 이미지 목록 아이템 중 특정 아이템을 개별 삭제하기 위한 함수
-     * @param {number} id - 첫 번째 숫자
+     * @param {number} id
      * @returns {number} number1 + number2
      */
     const removeImageListItem = (id) => {
