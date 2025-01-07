@@ -5,11 +5,11 @@
 ***
 ## 버전 관리
 
-| 버전    | 날짜        | 작성자 | 내용             |
-| ----- | --------- | --- | -------------- |
-| 1.0.0 | 2025.1.7. | 류창선 | - 코딩 컨벤션 초기 작성 |
-|       |           |     |                |
-|       |           |     |                |
+| 버전    | 날짜        | 작성자 | 내용           |
+| ----- | --------- | --- | ------------ |
+| 1.0.0 | 2025.1.7. | 류창선 | 코딩 컨벤션 초기 작성 |
+| -     | -         | -   | -            |
+| -     | -         | -   | -            |
 ***
 
 ## 프로젝트 구조
@@ -50,8 +50,7 @@ const abcdefghijklm = () => {...}; // bad
 const selectedIndex = () => {...}; // good
 
 // 상수는 SCREAMING_SNAKE_CASE를 따릅니다. 
-// 더불어 매직 넘버(하드 코딩된 일정한 값을 의미하는 숫자나 문자열)는 
-// 최대한 상수화합니다.
+// 더불어 매직 넘버(하드 코딩된 일정한 값을 의미하는 숫자나 문자열)는 최대한 상수화합니다.
 const ERROR_MESSAGE = 'Error...';
 
 // 변수나 함수명에 고정적인 접두사 또는 단어를 사용합니다. boolean의 경우는 is, has를 사용합니다.
@@ -100,8 +99,7 @@ import SMSContainer from '...';
 const HTTPRequests = [...];
 					  
 // Sass(SCSS)는 kebab-case를 따릅니다. 
-// 단, mixin과 함수의 경우는 Javascript의 메서드와 유사하므로 
-// camelCase를 따릅니다.
+// 단, mixin과 함수의 경우는 Javascript의 메서드와 유사하므로 camelCase를 따릅니다.
 $primary-color: #000;
 
 .sticky-header {
@@ -116,8 +114,7 @@ $primary-color: #000;
   align-items: center;
 }
 
-// Typescript의 interface와 type 앞에 I와 T는 쓰지 않습니다. 
-// 즉, 헝가리안 표기법을 사용하지 않습니다. 
+// Typescript의 interface와 type 앞에 I와 T는 쓰지 않습니다. 즉, 헝가리안 표기법을 사용하지 않습니다. 
 // 둘 모두 PascalCase를 따릅니다. 
 // 또한 객체일 경우에 interface를 사용하며, 그렇지 않다면 type을 사용합니다.
 interface AccountData {...}
@@ -157,12 +154,10 @@ import { center } from "@styles/common.css";  // 10. 스타일 파일
 /* 
   1. CSS Framework(Tailwind CSS, UnoCSS, etc), 
      CSS in JS(styled-components, Emotion, vanilla-extract, etc), 
-     pre-processor(Sass, Less, etc) 등 
-     다양한 스타일링 방법에서 동일하게 적용하는 규칙입니다.
+     pre-processor(Sass, Less, etc) 등 다양한 스타일링 방법에서 동일하게 적용하는 규칙입니다.
   2. 전반적으로 블록 엘리먼트부터 인라인 엘리먼트까지 순서대로 선언하는 것을 원칙으로 합니다. 
   3. 논리적인 순서로 기입합니다. 
-     예를 들어, z-index는 position이 먼저 선언되어야 사용할 수 있는 속성이므로, 
-    position을 먼저 선언합니다.
+     예를 들어, z-index는 position이 먼저 선언되어야 사용할 수 있는 속성이므로 position을 먼저 선언합니다.
   4. border의 경우는 Box Model 범주에 속하나 색상을 함께 선언하는 경우가 대부분이므로 따로 분류합니다.
   5. 예시에 없는 속성의 경우는 개발자 간의 협의를 통해 순서를 정하도록 합니다.
 */ 
