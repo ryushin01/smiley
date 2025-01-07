@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "545241e6968297e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f4d3740ea44585f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c88b8032836d43f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "전자 등기(electronic registration).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "전자 등기(electronic registration)"
+            }
+          },
+          {
+            "id": "6b73ef0ecc3faea2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8d840c67474e5548",
+    "type": "split",
+    "children": [
+      {
+        "id": "8690fc5c80f09cc8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c0733e655af7d8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "89247f27c325a9c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "c5e2e636ca9a2af5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8fba69dae2753eae",
+    "type": "split",
+    "children": [
+      {
+        "id": "7768c35a498a6942",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fee3150caa6ff4e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "6cb77324c0e89cae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "80a60a5df1aa9180",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "daafad8112c548df",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "6b73ef0ecc3faea2",
+  "lastOpenFiles": [
+    "전자 등기(electronic registration).md",
+    "README.md",
+    "README 복사본 3.md",
+    "README 복사본 2.md",
+    "README 1.md",
+    "README 복사본.md",
+    "무제 파일 21.md",
+    "무제 파일 20.md",
+    "황혜미M_1일차_피드백.md",
+    "박원준M_1일차_피드백.md",
+    "홍다인M_1일차_피드백.md",
+    "이은희M_1일차_피드백.md",
+    "무제 파일 19.md",
+    "무제 파일 18.md",
+    "무제 파일 17.md",
+    "무제 파일 16.md",
+    "무제 파일 15.md",
+    "무제 파일 14.md",
+    "딥링크.md",
+    "무제 파일 13.md",
+    "Sprint 1.md",
+    "20250103.md",
+    "무제 파일 12.md",
+    "무제 파일 11.md",
+    "전자 등기(electronic registration) 2.md",
+    "전자 등기(electronic registration) 1.md",
+    ".md"
+  ]
+}
