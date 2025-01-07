@@ -36,7 +36,7 @@
 ***
 
 ## 기술 스택
-[![My Skills](https://skillicons.dev/icons?i=react,html,sass,css,js,ts,pnpm,docker,jenkins,git,figma)
+![My Skills](https://skillicons.dev/icons?i=react,html,sass,css,js,ts,pnpm,docker,jenkins,git,figma)
 
 ***
 
