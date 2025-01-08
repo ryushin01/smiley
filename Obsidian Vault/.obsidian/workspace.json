@@ -4,39 +4,82 @@
     "type": "split",
     "children": [
       {
-        "id": "4f4d3740ea44585f",
-        "type": "tabs",
+        "id": "493d4640ea469bbd",
+        "type": "split",
         "children": [
           {
-            "id": "c88b8032836d43f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "전자 등기(electronic registration).md",
-                "mode": "source",
-                "source": false
+            "id": "4f4d3740ea44585f",
+            "type": "tabs",
+            "dimension": 59.94809688581315,
+            "children": [
+              {
+                "id": "c88b8032836d43f3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "전자 등기(electronic registration).md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "전자 등기(electronic registration)"
+                }
               },
-              "icon": "lucide-file",
-              "title": "전자 등기(electronic registration)"
-            }
+              {
+                "id": "6b73ef0ecc3faea2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "README.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "README"
+                }
+              },
+              {
+                "id": "556541f861b1707a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Next.js 프로젝트 구축.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Next.js 프로젝트 구축"
+                }
+              }
+            ],
+            "currentTab": 2
           },
           {
-            "id": "6b73ef0ecc3faea2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
+            "id": "18e11b90959308cb",
+            "type": "tabs",
+            "dimension": 40.05190311418685,
+            "children": [
+              {
+                "id": "29393c0cb3bb91fc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "info.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "info"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -174,34 +217,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6b73ef0ecc3faea2",
+  "active": "29393c0cb3bb91fc",
   "lastOpenFiles": [
-    "전자 등기(electronic registration).md",
+    "Next.js 프로젝트 구축.md",
+    "info.md",
     "README.md",
+    "Next.js 프로젝트 구축 9.md",
+    "Next.js 프로젝트 구축 8.md",
+    "Next.js 프로젝트 구축 7.md",
+    "전자 등기(electronic registration).md",
+    "Next.js 프로젝트 구축 6.md",
+    "무제 파일 24.md",
+    "Next.js 프로젝트 구축 5.md",
+    "Next.js 프로젝트 구축 4.md",
+    "Next.js 프로젝트 구축 3.md",
+    "Next.js 프로젝트 구축 2.md",
+    "Next.js 프로젝트 구축 1.md",
+    "20250108.md",
+    "박원준M_2일차_피드백.md",
+    "이은희M_2일차_피드백.md",
+    "홍다인M_2일차_피드백.md",
+    "홍다인M_1일차_피드백.md",
+    "이은희M_1일차_피드백.md",
+    "무제 파일 23.md",
+    "무제 파일 22.md",
     "README 복사본 3.md",
     "README 복사본 2.md",
     "README 1.md",
     "README 복사본.md",
-    "무제 파일 21.md",
-    "무제 파일 20.md",
-    "황혜미M_1일차_피드백.md",
-    "박원준M_1일차_피드백.md",
-    "홍다인M_1일차_피드백.md",
-    "이은희M_1일차_피드백.md",
-    "무제 파일 19.md",
-    "무제 파일 18.md",
-    "무제 파일 17.md",
-    "무제 파일 16.md",
-    "무제 파일 15.md",
-    "무제 파일 14.md",
-    "딥링크.md",
-    "무제 파일 13.md",
-    "Sprint 1.md",
-    "20250103.md",
-    "무제 파일 12.md",
-    "무제 파일 11.md",
-    "전자 등기(electronic registration) 2.md",
-    "전자 등기(electronic registration) 1.md",
     ".md"
   ]
 }
