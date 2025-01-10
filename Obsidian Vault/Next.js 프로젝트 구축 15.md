@@ -1,4 +1,4 @@
-# (주)뱅크클리어 프로젝트 프론트엔드 개발 가이드
+# (주)뱅크클리어 프로젝트 프론트엔드 개介발 가이드
 
 > 프로젝트 구축을 위한 초기 설정 등의 내용이 포함된 문서입니다. 작성 날짜 기준으로 아직 초고이므로, 추후 추가되거나 변경될 여지가 있습니다. 또한 아래 가이드에 맞는 순서대로 세팅을 진행하셔야 오류 발생률을 줄일 수 있습니다.
 
@@ -8,24 +8,12 @@
 | 버전    | 날짜        | 작성자 | 내용    |
 | ----- | --------- | --- | ----- |
 | 1.0.0 | 2025.1.9. | 류창선 | 초고 작성 |
-| 1.0.1 | 2025.1.10 | 류창선 | 내용 수정 |
 ***
+
 ## 설치 순서 요약본
-1. nvm 설치
-2. Node.js 설치
-3. pnpm 설치
-4. Next.js 프로젝트 생성 및 초기 설정
-5. Node.js 버전 확인
-6. 기본 package 설치
-7. 추가 package 설치
-8. package.json 설정
-9. next.config.ts 설정
-10. tsconfig.json 설정
-11. gitignore 설정
-12. ESLint 설정
-13. Prettier 설정
-14. IntelliJ IDEA 파일 저장 시 자동 코드 정렬 기능 활성화
-15. pnpm run dev
+
+***
+## 세팅 체크 리스트
 
 ***
 ## nvm(Node Version Manager), Node.js, pnpm 설치
@@ -64,12 +52,12 @@ nvm use 16.0.0
 // 기본값으로 사용할 node 버전 설정
 nvm alias default v17.0.0
 ```
-## Next.js 프로젝트 생성 및 초기 설정
+## 프로젝트 초기 세팅
 ```bash
 // 1. Node.js 버전 변경
 nvm use 22
 
-// 2. Next.js(TypeScript) 프로젝트 생성
+// 2. Next.js 설치(TypeScript): 
 npx create-next-app@latest --ts
 
 // 3. 초기 설정
@@ -133,7 +121,7 @@ pnpm add react-datepicker
 pnpm add react-error-boundary
 ```
 
-## package.json  설정
+## package.json 설정
 ```json
 // package.json
 {
@@ -159,7 +147,7 @@ pnpm add react-error-boundary
 }
 ```
 
-## next.config 설정
+## next.config.ts 설정
 ```js
 // next.config.ts
 import type { NextConfig } from "next";  
@@ -173,16 +161,12 @@ const nextConfig: NextConfig = {
 	eslint: {  
 		ignoreDuringBuilds: true,  
 	},
-	// 좌측 하단에 노출되는 Static Indicator 숨김 처리
-	devIndicators: { 
-		appIsrStatus: false, 
-	},
 };  
   
 export default nextConfig;
 ```
 
-## tsconfig 설정
+## tsconfig.json 설정
 ```json
 // tsconfig.json
 {  
@@ -357,39 +341,10 @@ export default eslintConfig;
 }
 ```
 
-## 부가 설정
-### ![My Skills](https://skillicons.dev/icons?i=idea)
-> ***ESLint***
-> 
-> IntelliJ - 설정 - 언어 및 프레임워크 - JavaScript - 코드 품질 도구 - ESLint - `수동 ESLint 구성` 체크 활성화 - ESLint 패키지 경로 지정 - 구성 파일 경로 지정 - `저장 시 eslint --fix 실행` 체크 활성화
-
-> ***Prettier***
-> 
-> IntelliJ - 설정 - 플러그인 - Prettier 설치 - 언어 및 프레임워크 - JavaScript - Prettier - `수동 Prettier 구성` 체크 활성화 - Prettier 패키지 경로 지정 - `'코드 서식 다시 지정' 액션 시 실행` 체크 활성화 - `저장 시 실행` 체크 활성화
-
-> ***파일 저장 시 자동 코드 정렬 기능 활성화***
-> 
-> IntelliJ - 설정 - 도구 - 저장 시 액션 - `코드 서식 다시 지정` 체크 활성화
-
->  ***주석 태그 활용 및 커밋 옵션 제외 처리***
-> 
-> IntelliJ - 기본 설정 - 설정 - 에디터 - 할일 목록 - 추가 - `NOTE` 패턴 입력 - `색 구성표 TODO 디폴트 색상 사용` 체크 비활성화 - 전경 헥스코드 영역 클릭 - `00a8ff` 헥스 코드 입력 후 선택 - 확인 - 적용 - 확인 
-> 
-> IntelliJ - 커밋 탭 - 커밋 및 푸시 버튼 우측의 커밋 옵션 표시 - `TODO 확인` 체크 비활성화 
-### ![My Skills](https://skillicons.dev/icons?i=vscode)
-> ***ESLint***
-> 
-> Visual Studio Code - 기본 설정 - 확장 - ESLint 검색 후 설치
-
-> ***Prettier***
-> 
-> Visual Studio Code - 기본 설정 - 확장 - Prettier 검색 후 설치 - 기본 설정 - 설정 - `default formatter` 검색 - 텍스트 편집기 - 셀렉터에서 `Prettier - Code formatter` 선택
-
-> ***파일 저장 시 자동 코드 정렬 기능 활성화***
-> 
-> Visual Studio Code - 기본 설정 - 설정 - `format on save` 검색 - `Editor: Format On Save` 체크 활성화
-
-
+## IntelliJ에서 파일 저장 시 ESLint, Prettier 설정 적용법
+- ESLint: IntelliJ - 설정 - 언어 및 프레임워크 - JavaScript - 코드 품질 도구 - ESLint - `저장 시 eslint --fix 실행` 체크 활성화
+- Prettier: IntelliJ - 설정 - 플러그인 - Prettier 설치 - 언어 및 프레임워크 - JavaScript - Prettier - `자동 Prettier 구성` 체크 활성화 - `저장 시 실행` 체크 활성화
+- IntelliJ IDEA 파일 저장 시 자동 코드 정렬 기능 활성화: IntelliJ - 설정 - 도구 - 저장 시 액션 - `코드 서식 다시 지정` 체크 활성화
 
 
 - [ ] index.d.ts

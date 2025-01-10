@@ -1,7 +1,7 @@
 - 일정
 	- 기존 1월 중순 > 1월 13일 ~ 1월 24일까지 화면 완료
 	- 디자인 완료: 1월 10일
-- ==프로젝트명?==
+- ==프로젝트명: kosdr(korea + escrow + digital + registration )==
 - 프론트엔드: 반응형 웹(PC - Mobile)
 - 프론트엔드 기술 스택
 	- 프레임워크: Next.js
@@ -81,6 +81,17 @@
 	- [ ] Next.js 배포: docker? vercel? etc?
 - [ ] 주석: jsdoc
 - [ ] 네이밍 컨벤션: 함수, 컴포넌트, 변수명 등
+- [ ] 원격 저장소 이름 후보군
+	- [ ] kosdr-react-web
+	- [ ] kosdr-next
+	- [ ] kosdr-standard
+	- [ ] eRegistry
+	- [ ] SmartDeed
+	- [ ] EasyRegistry
+	- [ ] RegiMate
+	- [ ] TitleTrack
+	- [ ] kosdr-web-mate
+	- [ ] kosdr-forest
 
 
 - ==모바일==
