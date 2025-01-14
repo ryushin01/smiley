@@ -256,7 +256,7 @@ export default nextConfig;
 ## env 공통 설정
 ```
 // .env                모든 환경에서 공통적으로 적용되는 env
-// .env.developmenet   개발 환경에서 적용되는 env
+// .env.development    개발 환경에서 적용되는 env
 // .env.production     배포 환경에서 적용되는 env
 // .env.local          로컬 환경에서 적용되는 env
 
