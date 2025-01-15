@@ -10,7 +10,7 @@
           {
             "id": "4f4d3740ea44585f",
             "type": "tabs",
-            "dimension": 51.33876600698487,
+            "dimension": 58.67298578199052,
             "children": [
               {
                 "id": "6b73ef0ecc3faea2",
@@ -41,20 +41,6 @@
                 }
               },
               {
-                "id": "da704fb327e2b290",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "kosdr readme.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "kosdr readme"
-                }
-              },
-              {
                 "id": "c88b8032836d43f3",
                 "type": "leaf",
                 "state": {
@@ -67,14 +53,28 @@
                   "icon": "lucide-file",
                   "title": "전자 등기(electronic registration)"
                 }
+              },
+              {
+                "id": "c0c92147b39fab23",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "KOSER README.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "KOSER README"
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           },
           {
             "id": "f695d9e1d8bd4d0a",
             "type": "tabs",
-            "dimension": 48.66123399301514,
+            "dimension": 41.32701421800948,
             "children": [
               {
                 "id": "e26d6f04d8140063",
@@ -102,6 +102,20 @@
                   },
                   "icon": "lucide-file",
                   "title": "20250115"
+                }
+              },
+              {
+                "id": "9266acc511af6ffd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250115 신협 전자등기 플젝 프론트-백 협의.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250115 신협 전자등기 플젝 프론트-백 협의"
                 }
               }
             ],
@@ -246,16 +260,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d1a0810813674d38",
+  "active": "c88b8032836d43f3",
   "lastOpenFiles": [
-    "전자 등기(electronic registration).md",
-    "디자인 피드백.md",
+    "KOSER README.md",
+    "인텔리제이 추천 플러그인.md",
     "20250115.md",
+    "전자 등기(electronic registration).md",
     "Next.js 프로젝트 구축.md",
+    "kosdr readme.md",
+    "kosdr readme 복사본.md",
+    "20250115 신협 전자등기 플젝 프론트-백 협의.md",
+    "송원섭M_2일차_피드백.md",
+    "송원섭M_3일차_피드백.md",
+    "송원섭M_1일차_피드백.md",
+    "디자인 피드백.md",
     "20250113-14.md",
     "무제 파일 26.md",
     "프론트엔드 개발 공통 가이드 및 컨벤션.md",
-    "kosdr readme.md",
     "info.md",
     "Next.js 프로젝트 구축 17.md",
     "Next.js 프로젝트 구축 16.md",
@@ -267,13 +288,6 @@
     "맥 추천 어플(20250109).md",
     "README 2.md",
     "Next.js 프로젝트 구축 11.md",
-    "홍다인M_3일차_피드백.md",
-    "홍다인M_3일차_피드백 1.md",
-    "이은희M_3일차_피드백.md",
-    "송원섭M_1일차_피드백.md",
-    "Next.js 프로젝트 구축 10.md",
-    "무제 파일 25.md",
-    "황혜미M_1일차_피드백.md",
     ".md"
   ]
 }
