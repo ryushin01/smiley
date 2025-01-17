@@ -32,7 +32,7 @@
 	- [x] 타이포그래피
 	- [x] 테마 컬러
 	- [x] 아이코노그래피
-	- [ ] 인풋 텍스트
+	- [x] 인풋 텍스트
 	- [ ] 체크박스
 	- [ ] gnb
 	- [ ] 인풋 서치
@@ -53,6 +53,9 @@
 - [ ] ==기능 명세==
 	- [ ] 공통 함수(데이터 페칭 포함) 개발 필요
 		- [x] 데이터 페칭: axios interceptors > ==axios 모듈화==
+	- [ ] 레이아웃 개발 > const pathname = usePathname();
+		- [ ] 최상위 공통 레이아웃: header / main
+		- [ ] 로그인 제외: nav(gnb) / footer
 	- [ ] 로그인 및 비밀번호 변경
 		- [ ] 아이디 저장    
 		- [ ] 유효성 검증
@@ -103,5 +106,19 @@
 	- 사진 촬영(Page A)
 		- 형제 컴포넌트 노출 / 미노출 처리
 	- 사진 업로드(Popup)
+
+- 차세대 KOS 프로젝트에서 가져올 모듈 및 훅 선별 목록
+	- [ ] hooks
+		- [ ] useCheckbox
+		- [ ] useDatePicker
+		- [ ] useDisclosure
+		- [ ] useMovescroll
+	- [ ] utils
+		- [ ] dateUtil
+		- [ ] formatDate
+		- [ ] formatNumber
+		- [ ] hypenNumber
+		- [ ] scrollToInput
+		- [ ] stringUtil
 
 

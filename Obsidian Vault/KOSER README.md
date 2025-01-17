@@ -32,22 +32,27 @@ pnpm run dev
 ```
 📦 project
 ├── 🗂️ public
-│ ├── 🗂️ fonts        // 웹 폰트
-│ ├── 🗂️ icons        // svg 아이콘
-│ └── 🗂️ images       // 이미지 파일
-│ └── 🏙️ logo.svg     // 파비콘
+│ ├── 🗂️ fonts             // 웹 폰트
+│ ├── 🗂️ icons             // svg 아이콘
+│ └── 🗂️ images            // 이미지 파일
+│ └── 🏙️ logo.svg          // 파비콘
 │
 ├── 🗂️ src
-│ ├── 🗂️ app          // 라우팅 관련 파일
-│ ├── 🗂️ components   // 공통 컴포넌트
-│ ├── 🗂️ constants    // 공통 상수값
-│ ├── 🗂️ hooks        // 공통 커스텀 훅
-│ ├── 🗂️ libs         // 외부 라이브러리
-│ ├── 🗂️ services     // 각종 API 요청
-│ ├── 🗂️ stores       // 전역 상태 관리 대상인 state
-│ ├── 🗂️ styles       // 전역 및 모듈화된 스타일 파일
-│ ├── 🗂️ types        // 각종 타입스크립트 타입 정의
-│ └── 🗂️ utils        // 공통 유틸리티 함수
+│ ├── 🗂️ app               // 라우팅 관련 파일
+│ │   ├── dashboard        // 대시보드
+│ │   ├── request-list     // 의뢰목록
+│ │   ├── status-inquiry   // 현황조회
+│ │   └── notice           // 공지사항
+│ │
+│ ├── 🗂️ components        // 공통 컴포넌트
+│ ├── 🗂️ constants         // 공통 상수값
+│ ├── 🗂️ hooks             // 공통 커스텀 훅
+│ ├── 🗂️ libs              // 외부 라이브러리
+│ ├── 🗂️ services          // 각종 API 요청
+│ ├── 🗂️ stores            // 전역 상태 관리 대상인 state
+│ ├── 🗂️ styles            // 전역 및 모듈화된 스타일 파일
+│ ├── 🗂️ types             // 각종 타입스크립트 타입 정의
+│ └── 🗂️ utils             // 공통 유틸리티 함수
 ```
 ***
 ## 부가 설정
