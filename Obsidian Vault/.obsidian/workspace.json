@@ -111,7 +111,7 @@
                 }
               }
             ],
-            "currentTab": 6
+            "currentTab": 3
           },
           {
             "id": "f695d9e1d8bd4d0a",
@@ -304,10 +304,10 @@
   },
   "active": "18aab62fcca59c98",
   "lastOpenFiles": [
-    "swiper.md",
-    "20250121-0123.md",
-    "20250115-17.md",
     "Packages.md",
+    "20250121-0123.md",
+    "swiper.md",
+    "20250115-17.md",
     "전자 등기(electronic registration).md",
     "SR - React 수정사항 정리.md",
     "KOSER README.md",
