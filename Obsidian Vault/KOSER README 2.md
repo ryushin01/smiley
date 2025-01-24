@@ -1,6 +1,6 @@
 # 신협 전자등기 프로젝트
 
-> 개발 후 반드시 lint 실행(`pnpm lint`)을 통해 `No ESLint warnings or errors` 문구 출력이 확인된 상태에서 소스 코드를 저장소로 올립니다.
+> 개발 후 반드시 lint 실행을 통해 `No ESLint warnings or errors` 문구 출력이 확인된 상태에서 소스 코드를 저장소로 올립니다.
 ***
 ## 시작 가이드
 ### 요구 사항
@@ -55,6 +55,14 @@ pnpm run dev
 │ ├── 🗂️ types                // 각종 타입스크립트 타입 정의
 │ └── 🗂️ utils                // 공통 유틸리티 함수
 ```
+### 주요 패키지
+<img src="https://img.shields.io/badge/Axios-5a29e4?style=flat&logo=Axios&logoColor=white"/>
+<img src="https://img.shields.io/badge/dateFns-770c56?style=flat&logo=dateFns&logoColor=white"/>
+<img src="https://img.shields.io/badge/ESLint-4b32c3?style=flat&logo=ESLint&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prettier-f7b93e?style=flat&logo=Prettier&logoColor=white"/>
+<img src="https://img.shields.io/badge/ReactQuery-ff4154?style=flat&logo=ReactQuery&logoColor=white"/>
+<img src="https://img.shields.io/badge/Swiper-6332f6?style=flat&logo=Swiper&logoColor=white"/>
+
 ***
 ## 부가 설정
 ### ![My Skills](https://skillicons.dev/icons?i=idea)
@@ -87,6 +95,3 @@ pnpm run dev
 > ***파일 저장 시 자동 코드 정렬 기능 활성화***
 > 
 > Visual Studio Code - 기본 설정 - 설정 - `format on save` 검색 - `Editor: Format On Save` 체크 활성화
-***
-## 향후 과제
-![My Skills](https://skillicons.dev/icons?i=cypress,docker,jest,regex,sass)

@@ -71,10 +71,8 @@ const DatePickerSample = () => {
 				showPopperArrow={false}
 				// 캘린더 노출 위치 설정
 				popperPlacement="bottom-start"
-				// 연도 선택 드롭다운
-				showYearDropdown
-				// 월 선택 드롭다운  
-				showMonthDropdown
+				// 연도 선택 드롭다운  
+				showMonthYearDropdown
 			/>
 				
 			<Image
@@ -86,21 +84,6 @@ const DatePickerSample = () => {
 };
 ```
 
-```tsx
-// 데이터피커 리셋
-const reset = () => {  
-  setStartDate(null);  
-  setEndDate(null);  
-};
-```
-
-
-single / dual
-- [x] selectsRange prop 유무
-- [x] endDate prop 유무
-- [x] 날짜 선택 함수 분기
-
-
 ***
 - react-drag-drop-files (v2.4.0)
 ```tsx
@@ -110,18 +93,5 @@ single / dual
 */
 ```
 
-***
-- 간단한 자기 소개를 해주세요
-- 이전 회사 퇴직 사유가 무엇인가
-- React 선택 이유가 무엇인가
-- 네이티브 앱 경험이 있는가
-- 플러터 경험이 있는가
-- 관심 있는 개발 언어나 프레임워크가 무엇이고, 그 이유는
-- 백엔드 이해도는 얼마나 되는가
-- 이전 회사의 개발 규모와 작업 방식은 어떻게 되는가
-- 애자일 방식에 대한 경험이 있는가
-- 스트레스 해소 노하우가 있는가
-- 개발자로 전향한 까닭은 무엇인가
-- 개발자로 전향하면서 후회한 적은 없는가
-- 회사에서 이루고 싶은 목표가 무엇인가
-- 
+- [x] ==폴더명 변경: @sample-table, etc==
+

@@ -53,12 +53,12 @@
 - [ ] ==기능 명세==
 	- [ ] 공통 함수(데이터 페칭 포함) 개발 필요
 		- [x] 데이터 페칭: axios interceptors > ==axios 모듈화==
-	- [ ] 레이아웃 개발 > const pathname = usePathname();
-		- [ ] 최상위 공통 레이아웃: header / main
-		- [ ] 로그인 제외: nav(gnb) / footer
+	- [x] 레이아웃 개발 > const pathname = usePathname();
+		- [x] 최상위 공통 레이아웃: header / main
+		- [x] 로그인 제외: nav(gnb) / footer
 	- [ ] 로그인 및 비밀번호 변경
 		- [ ] 아이디 저장    
-		- [ ] 유효성 검증
+		- [x] 유효성 검증
 	- [ ] 홈(대시보드)
 		- [ ] 의뢰번호 검색
 		- [ ] 로그아웃
@@ -73,10 +73,10 @@
 		- [ ] (Mobile) 이미지 촬영 및 갤러리 미저장
 		- [ ] 이미지 업로드
 		- [ ] 이미지 개별 삭제
-		- [ ] 데이트피커 
+		- [x] 데이트피커 
 	- [ ] 현황조회
 		- [ ] 조회(필터 검색)
-		- [ ] 데이트피커
+		- [x] 데이트피커
 		- [ ] 조회 초기화
 		- [ ] 팝업 - 실행일 기준 버튼 노출 / 미노출 처리
 
@@ -85,9 +85,9 @@
 	- [ ] 서버 컴포넌트
 - [ ] 확인 필요 목록
 	- [ ] Next.js 배포: docker? vercel? etc?
-- [ ] 주석: jsdoc
-- [ ] 네이밍 컨벤션: 함수, 컴포넌트, 변수명 등
-- [ ] 원격 저장소 이름 후보군
+- [x] 주석: jsdoc
+- [x] 네이밍 컨벤션: 함수, 컴포넌트, 변수명 등
+- [x] 원격 저장소 이름 후보군
 	- [ ] kosdr-react-web
 	- [ ] kosdr-next
 	- [ ] kosdr-standard
@@ -110,11 +110,11 @@
 - 차세대 KOS 프로젝트에서 가져올 모듈 및 훅 선별 목록
 	- [ ] hooks
 		- [ ] useCheckbox
-		- [ ] useDatePicker
+		- [x] useDatePicker
 		- [ ] useDisclosure
 		- [ ] useMovescroll
 	- [ ] utils
-		- [ ] dateUtil
+		- [x] dateUtil
 		- [ ] formatDate
 		- [ ] formatNumber
 		- [ ] hypenNumber
