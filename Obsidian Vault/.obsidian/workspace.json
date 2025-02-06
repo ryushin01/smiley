@@ -10,7 +10,7 @@
           {
             "id": "4f4d3740ea44585f",
             "type": "tabs",
-            "dimension": 66.08996539792388,
+            "dimension": 66.52497343251859,
             "children": [
               {
                 "id": "6b73ef0ecc3faea2",
@@ -144,7 +144,7 @@
           {
             "id": "f695d9e1d8bd4d0a",
             "type": "tabs",
-            "dimension": 33.910034602076124,
+            "dimension": 33.4750265674814,
             "children": [
               {
                 "id": "e26d6f04d8140063",
@@ -208,26 +208,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "20250204-0206.md",
+                    "file": "20250204-0205.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "20250204-0206"
-                }
-              },
-              {
-                "id": "e07883c4bc2df6c9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "개선 필요 목록.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "개선 필요 목록"
+                  "title": "20250204-0205"
                 }
               }
             ],
@@ -377,10 +363,11 @@
   "active": "2cb74871cc7bb288",
   "lastOpenFiles": [
     "개선 필요 목록.md",
+    "20250206.md",
+    "20250204-0205.md",
     "차세대 KOS App README.md.md",
     "KOSER README.md",
     "SR - React 정리_0203.md",
-    "20250204-0206.md",
     "기본 정보.md",
     "기본 정보 1.md",
     "계정 관련 정보.md",
@@ -401,7 +388,6 @@
     "전자 등기(electronic registration).md",
     "Packages.md",
     "기능 정리.md",
-    "20250124.md",
     ".md"
   ]
 }
