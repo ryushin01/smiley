@@ -1,3 +1,31 @@
+- ==이미지 등록 시 플러터에 lndHndgSlfDsc : ‘2’ 전송==
+- ==SR 상환영수증 등록 시, Flutter 호출 시 다음 조건을 반영해 주세요==
+	1. bankCd 필드에는 항상 bankNm 값을 입력해주세요. (SR상환말소 정보 조회 API 데이터)
+	2. 관리자 반려 후 재등록일 경우, returnYn 필드를 'Y'로 설정해주세요.
+
+요청 데이터 예시
+
+1. 신규 등록
+{
+  wkCd: "IMAGE_BIZ",
+  attcFilCd: 2,
+  loanNo: loanNo,
+  bankCd: bankNm,
+}
+
+2. 반려 후 재등록
+{
+  wkCd: "IMAGE_BIZ",
+  attcFilCd: 2,
+  loanNo: loanNo,
+  returnYn: "Y",
+  bankCd: bankNm,
+}
+
+
+***
+
+
 - CNTR-03. 계약정보 조회(이상협 매니저)
 	- 사건 상세
 	- API : /cntr/searchCntrDetail
@@ -46,7 +74,7 @@
 
 ***
 
-- RGSTR-03. 등기 접수번호 등록(정가은 매니저)
+- RGSTR-03. 등기 접수번호 등록(정가은  매니저)
 	- 01. 등기 접수번호 데이터조회
 	- API : /trreg/searchacptnoreginfo/{loanNo}
 ```json
