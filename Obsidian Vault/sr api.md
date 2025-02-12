@@ -1,3 +1,4 @@
+- 홈 상단 카드 /  홈 하단 목록 / 알림톡에서도 SR 분기 처리 필요 > 공통 라우팅 모듈 > 사건 상세는 단일 페이지 개발 및 조건부 렌더링 처리
 - ==이미지 등록 시 플러터에 lndHndgSlfDsc : ‘2’ 전송==
 - ==SR 상환영수증 등록 시, Flutter 호출 시 다음 조건을 반영해 주세요==
 	1. bankCd 필드에는 항상 bankNm 값을 입력해주세요. (SR상환말소 정보 조회 API 데이터)
@@ -5,7 +6,7 @@
 
 요청 데이터 예시
 
-1. 신규 등록
+1. 신규 등록 
 {
   wkCd: "IMAGE_BIZ",
   attcFilCd: 2,
@@ -39,7 +40,16 @@
 	slmnLndPRocNm(SR 대출프로세스 명(조건부 취급 명))
 	slmnCmpyNm(모집인 회사명)
 	slmnNm(모집인 명)
-	slmnPhno(모집인 연락처)
+	slmnPhno(모집인 연락처) 
+	sellerNm1(매도인)
+	sellerBirthDt1(매도인 생년월일)
+	sellerNm2(공동매도인)
+	sellerBirthDt2(공동매도인 생년월일)
+	trstNm(수탁자명(신탁사))
+	cnsgnNm(위탁자명(부동산소유자))
+	bnfrNm(우선수익자)
+	owshDocStatCd(소유권 서류 상태 코드)
+	owshDocStatNm(소유권 서류 상태 명)
 ```
 
 ***
