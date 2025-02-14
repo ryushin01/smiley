@@ -41,7 +41,7 @@
 	slmnCmpyNm(모집인 회사명)
 	slmnNm(모집인 명)
 	slmnPhno(모집인 연락처) 
-	sellerNm1(매도인)
+	sellerNm1(매도인) 
 	sellerBirthDt1(매도인 생년월일)
 	sellerNm2(공동매도인)
 	sellerBirthDt2(공동매도인 생년월일)
