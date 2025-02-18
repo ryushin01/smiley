@@ -10,7 +10,7 @@
           {
             "id": "4f4d3740ea44585f",
             "type": "tabs",
-            "dimension": 65.1928504233302,
+            "dimension": 58.624708624708624,
             "children": [
               {
                 "id": "c88b8032836d43f3",
@@ -123,13 +123,42 @@
                   "icon": "lucide-file",
                   "title": "statCd"
                 }
+              },
+              {
+                "id": "e2c045f08e24eda3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SR 실 데이터.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SR 실 데이터"
+                }
+              },
+              {
+                "id": "913585cb0acf5534",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SR 추가 작업 건.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SR 추가 작업 건"
+                }
               }
-            ]
+            ],
+            "currentTab": 9
           },
           {
             "id": "f695d9e1d8bd4d0a",
             "type": "tabs",
-            "dimension": 34.80714957666981,
+            "dimension": 41.375291375291376,
             "children": [
               {
                 "id": "e26d6f04d8140063",
@@ -277,12 +306,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "20250217.md",
+                    "file": "20250217-0218.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "20250217"
+                  "title": "20250217-0218"
                 }
               }
             ],
@@ -429,22 +458,25 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7b3387c2f0131cca",
+  "active": "913585cb0acf5534",
   "lastOpenFiles": [
+    "sr api.md",
+    "SR 추가 작업 건.md",
+    "SR 실 데이터.md",
+    "추가.md",
+    "statCd.md",
+    "20250217-0218.md",
+    "SR - React 정리_0203.md",
+    "SR 대출금 요청 관련.md",
     "전자 등기(electronic registration).md",
-    "20250217.md",
     "Packages.md",
     "SR 추가 이슈.md",
-    "sr api.md",
-    "statCd.md",
     "20250214.md",
     "next.js 추천 패키지.md",
-    "SR - React 정리_0203.md",
     "기능 정리.md",
     "20250210 - koser.md",
     "20250212-0214.md",
     "무제 2.md",
-    "SR 대출금 요청 관련.md",
     "sr mock data.md",
     "20250210.md",
     "20250206-0207.md",
@@ -454,9 +486,6 @@
     "20250121-0123.md",
     "20250113-14.md",
     "김정현 이사님 요청.md",
-    "20250211.md",
-    "memo.md",
-    "swiper.md",
     ".md"
   ]
 }
