@@ -4,321 +4,137 @@
     "type": "split",
     "children": [
       {
-        "id": "3a0bcdfa9e9a5bf5",
-        "type": "split",
+        "id": "4f4d3740ea44585f",
+        "type": "tabs",
         "children": [
           {
-            "id": "4f4d3740ea44585f",
-            "type": "tabs",
-            "dimension": 58.624708624708624,
-            "children": [
-              {
-                "id": "c88b8032836d43f3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "전자 등기(electronic registration).md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "전자 등기(electronic registration)"
-                }
+            "id": "c88b8032836d43f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "전자 등기(electronic registration).md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "94b96aa56ae0393c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Packages.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Packages"
-                }
-              },
-              {
-                "id": "b35c1c4204ba8d41",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "기능 정리.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "기능 정리"
-                }
-              },
-              {
-                "id": "e9abf0820fda5c58",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "SR - React 정리_0203.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SR - React 정리_0203"
-                }
-              },
-              {
-                "id": "92a104c8b61d55b6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "SR 대출금 요청 관련.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SR 대출금 요청 관련"
-                }
-              },
-              {
-                "id": "6618165dd7cb7860",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "sr mock data.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "sr mock data"
-                }
-              },
-              {
-                "id": "7a8a8dc5c7cf46e7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "sr api.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "sr api"
-                }
-              },
-              {
-                "id": "563cdc5af37c5b2f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "statCd.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "statCd"
-                }
-              },
-              {
-                "id": "e2c045f08e24eda3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "SR 실 데이터.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SR 실 데이터"
-                }
-              },
-              {
-                "id": "913585cb0acf5534",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "SR 추가 작업 건.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SR 추가 작업 건"
-                }
-              }
-            ],
-            "currentTab": 9
+              "icon": "lucide-file",
+              "title": "전자 등기(electronic registration)"
+            }
           },
           {
-            "id": "f695d9e1d8bd4d0a",
-            "type": "tabs",
-            "dimension": 41.375291375291376,
-            "children": [
-              {
-                "id": "e26d6f04d8140063",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250113-14.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250113-14"
-                }
+            "id": "94b96aa56ae0393c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Packages.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "18aab62fcca59c98",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250121-0123.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250121-0123"
-                }
+              "icon": "lucide-file",
+              "title": "Packages"
+            }
+          },
+          {
+            "id": "b35c1c4204ba8d41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기능 정리.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "d1a0810813674d38",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250124.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250124"
-                }
+              "icon": "lucide-file",
+              "title": "기능 정리"
+            }
+          },
+          {
+            "id": "e9abf0820fda5c58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SR - React 정리_0203.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "7dae683f401bb18a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250206-0207.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250206-0207"
-                }
+              "icon": "lucide-file",
+              "title": "SR - React 정리_0203"
+            }
+          },
+          {
+            "id": "6618165dd7cb7860",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sr mock data.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "0b3d9521829a4a21",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250210.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250210"
-                }
+              "icon": "lucide-file",
+              "title": "sr mock data"
+            }
+          },
+          {
+            "id": "7a8a8dc5c7cf46e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sr api.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "f154e706542a1cfd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "memo.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "memo"
-                }
+              "icon": "lucide-file",
+              "title": "sr api"
+            }
+          },
+          {
+            "id": "563cdc5af37c5b2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "statCd.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "43f2970282baf421",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250211.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250211"
-                }
+              "icon": "lucide-file",
+              "title": "statCd"
+            }
+          },
+          {
+            "id": "e2c045f08e24eda3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SR 실 데이터.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "e58915298f42adb3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "김정현 이사님 요청.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "김정현 이사님 요청"
-                }
+              "icon": "lucide-file",
+              "title": "SR 실 데이터"
+            }
+          },
+          {
+            "id": "37478839975f8bab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20250219.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "e8de32308580d97b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250212-0214.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250212-0214"
-                }
-              },
-              {
-                "id": "e815892bcef473a9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "SR 추가 이슈.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SR 추가 이슈"
-                }
-              },
-              {
-                "id": "7b3387c2f0131cca",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "20250217-0218.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "20250217-0218"
-                }
-              }
-            ],
-            "currentTab": 10
+              "icon": "lucide-file",
+              "title": "20250219"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -458,34 +274,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "913585cb0acf5534",
+  "active": "37478839975f8bab",
   "lastOpenFiles": [
-    "sr api.md",
-    "SR 추가 작업 건.md",
-    "SR 실 데이터.md",
-    "추가.md",
-    "statCd.md",
-    "20250217-0218.md",
+    "전자 등기(electronic registration).md",
+    "20250219.md",
+    "기능 정리.md",
     "SR - React 정리_0203.md",
     "SR 대출금 요청 관련.md",
-    "전자 등기(electronic registration).md",
-    "Packages.md",
+    "sr mock data.md",
+    "sr api.md",
+    "statCd.md",
+    "SR 실 데이터.md",
+    "SR 추가 작업 건.md",
+    "20250113-14.md",
+    "20250121-0123.md",
+    "20250124.md",
+    "20250206-0207.md",
+    "20250210.md",
+    "memo.md",
+    "20250211.md",
+    "김정현 이사님 요청.md",
+    "20250212-0214.md",
     "SR 추가 이슈.md",
+    "20250217-0218.md",
+    "추가.md",
+    "Packages.md",
     "20250214.md",
     "next.js 추천 패키지.md",
-    "기능 정리.md",
     "20250210 - koser.md",
-    "20250212-0214.md",
-    "무제 2.md",
-    "sr mock data.md",
-    "20250210.md",
-    "20250206-0207.md",
-    "20250124.md",
-    "20250131-0203.md",
-    "20250204-0205.md",
-    "20250121-0123.md",
-    "20250113-14.md",
-    "김정현 이사님 요청.md",
     ".md"
   ]
 }
