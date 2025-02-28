@@ -10,7 +10,7 @@
           {
             "id": "4f4d3740ea44585f",
             "type": "tabs",
-            "dimension": 57.81990521327014,
+            "dimension": 58.5781990521327,
             "children": [
               {
                 "id": "c88b8032836d43f3",
@@ -125,68 +125,40 @@
                 }
               },
               {
-                "id": "7a3f1e0316cd2f2a",
+                "id": "24cfa7d562e62f66",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "무제 6.md",
+                    "file": "이전 건 여신번호.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "무제 6"
+                  "title": "이전 건 여신번호"
                 }
               },
               {
-                "id": "337f1c703046db6f",
+                "id": "061b1ebec1b7e165",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "무제 7.md",
+                    "file": "개선 필요 목록_20250228.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "무제 7"
-                }
-              },
-              {
-                "id": "a75d8a884585e33e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "프론트엔드 개발 공통 가이드 및 코딩 컨벤션.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "프론트엔드 개발 공통 가이드 및 코딩 컨벤션"
-                }
-              },
-              {
-                "id": "17cb3f86bcacd1a4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "무제 8.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "무제 8"
+                  "title": "개선 필요 목록_20250228"
                 }
               }
             ],
-            "currentTab": 6
+            "currentTab": 9
           },
           {
             "id": "da4740ef3560f943",
             "type": "tabs",
-            "dimension": 42.18009478672986,
+            "dimension": 41.4218009478673,
             "children": [
               {
                 "id": "db47e462eeddf456",
@@ -222,16 +194,30 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "20250225-0226.md",
+                    "file": "20250225-0227.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "20250225-0226"
+                  "title": "20250225-0227"
+                }
+              },
+              {
+                "id": "99604f226de0ea82",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250228.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250228"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "horizontal"
@@ -374,16 +360,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a265c442adbbc16e",
+  "active": "061b1ebec1b7e165",
   "lastOpenFiles": [
+    "20250228.md",
+    "개선 필요 목록_20250228.md",
+    "이전 건 여신번호.md",
+    "20250225-0227.md",
     "SR 실 데이터.md",
-    "20250225-0226.md",
+    "무제 11.md",
+    "무제 10.md",
+    "무제 9.md",
+    "코스 가상 은행서버 사용 가이드.md",
     "무제 8.md",
     "프론트엔드 개발 공통 가이드 및 코딩 컨벤션.md",
     "무제 7.md",
     "무제 6.md",
     "20250219-0220.md",
-    "코스 가상 은행서버 사용 가이드.md",
     "무제 5.md",
     "무제 4.md",
     "무제 3.md",
@@ -396,12 +388,6 @@
     "전자 등기(electronic registration).md",
     "20250220-0221.md",
     "20250224.md",
-    "SR 관련 백엔드 요청 사항.md",
-    "오설록 세작.md",
-    "SR 대출금 요청 관련.md",
-    "SR 추가 작업 건.md",
-    "20250113-14.md",
-    "20250121-0123.md",
     ".md"
   ]
 }
